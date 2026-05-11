@@ -1,0 +1,67 @@
+{
+  "bot_name": "PsySupport AI",
+  "start": {
+    "greeting": "Hello. I'm {bot_name} — an AI assistant for psychological self-help and emotional support.",
+    "capabilities": "I can help you:\n— understand emotions and thoughts\n— reduce stress\n— do CBT/DBT/mindfulness exercises\n— keep a mood diary\n— make a small action plan",
+    "disclaimer": "I am not a doctor, not a psychotherapist and not a crisis service. I do not diagnose or prescribe treatment.",
+    "crisis_warning": "If you are in danger or have thoughts of harming yourself/others, contact emergency services, a crisis line or someone nearby.",
+    "consent": "By continuing, you confirm that you understand these limitations.",
+    "buttons": {
+      "continue": "✅ I understand, continue",
+      "crisis": "🆘 I need urgent help",
+      "privacy": "🔒 Privacy policy"
+    }
+  },
+  "menu": {
+    "chat": "🗣 Chat",
+    "anxiety": "😰 I'm anxious",
+    "sad": "😔 I'm sad",
+    "mood": "📝 Mood diary",
+    "exercises": "🧘 Exercises",
+    "safety_plan": "📋 Safety plan",
+    "settings": "⚙️ Settings"
+  },
+  "crisis": {
+    "response": "It seems like this might be an unsafe moment. I cannot replace emergency help, but I can stay with you in chat.\n\nPlease do 3 things now:\n1. Call your local emergency service or crisis line.\n2. Text or call someone nearby: \"I'm not safe alone right now, stay with me.\"\n3. Put away anything you could hurt yourself with.\n\nReply with one word: are you alone right now?",
+    "elevated": "I hear that you're going through a very difficult time. This is important and serious.\n\nI can help with small steps right now, but if you've been feeling bad for a long time or it's getting worse, please reach out to a specialist.\n\nWould you like to do a short stabilization exercise?"
+  },
+  "mood": {
+    "question": "📊 How are you feeling right now?",
+    "saved": "✅ Saved: {mood}\n\nThanks for the note! Tracking mood helps notice patterns.\n\nWould you like to add a note about what's affecting your state?",
+    "levels": {
+      "5": "Great 😊",
+      "4": "Good 🙂",
+      "3": "Okay 😐",
+      "2": "Not great 😕",
+      "1": "Bad 😢"
+    }
+  },
+  "chat": {
+    "prompt": "I'm here. Tell me what's on your mind. I'll listen and help you figure it out.",
+    "error": "Sorry, an error occurred while processing your request. Please try again later or reach out for help."
+  },
+  "safety_plan": {
+    "title": "📋 Safety Plan",
+    "items": [
+      "1. My early warning signs: _____________",
+      "2. What I can do myself in the first 10 minutes: _____________",
+      "3. What helps me switch focus: _____________",
+      "4. People I can text/call: _____________",
+      "5. Specialists/services: _____________",
+      "6. How to make space safer: _____________",
+      "7. What keeps me going: _____________",
+      "8. What I'll do right now: _____________"
+    ],
+    "start_filling": "Start filling in any item. No need to do everything at once."
+  },
+  "privacy": {
+    "policy": "🔒 Privacy Policy\n\n• We minimize data collection\n• Messages are not stored by default (STORE_CONVERSATIONS=false)\n• You can delete your data with /delete_my_data\n• We do not share data with third parties",
+    "delete_confirm": "⚠️ Are you sure you want to delete all your data? This action cannot be undone.",
+    "deleted": "✅ All your data has been deleted."
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "rate_limit": "Too many messages. Please wait a moment.",
+    "model_unavailable": "AI model is temporarily unavailable. Please try again in a minute."
+  }
+}

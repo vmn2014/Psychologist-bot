@@ -19,24 +19,28 @@ ELEVATED_DISTRESS_RESPONSE = """Я слышу, что тебе очень тяж
 Хочешь, сделаем одно короткое упражнение для стабилизации?"""
 
 
-def get_crisis_response(risk_level: RiskLevel) -> str:
+def get_crisis_response(risk_level: RiskLevel, lang: str = "en") -> str:
+    """Get crisis response in user's language."""
+    from app.bot.handlers.i18n import get_text
+
     if risk_level == RiskLevel.IMMINENT_RISK:
-        return CRISIS_RESPONSE_TEMPLATE
+        return get_text("crisis.response", lang)
     elif risk_level == RiskLevel.POSSIBLE_CRISIS:
-        return ELEVATED_DISTRESS_RESPONSE
+        return get_text("crisis.elevated", lang)
     return ""
 
 
-def get_safety_plan_template() -> str:
-    return """📋 План безопасности
+def get_safety_plan_template(lang: str = "en") -> str:
+    """Get safety plan template in user's language."""
+    from app.bot.handlers.i18n import get_text
 
-1. Мои ранние признаки ухудшения: _____________
-2. Что я могу сделать сам в первые 10 минут: _____________
-3. Что помогает мне переключиться: _____________
-4. Люди, которым я могу написать/позвонить: _____________
-5. Специалисты/службы: _____________
-6. Как сделать пространство безопаснее: _____________
-7. Что удерживает меня в жизни: _____________
-8. Что я сделаю прямо сейчас: _____________
+    title = get_text("safety_plan.title", lang)
+    items = get_text("safety_plan.items", lang)
+    start = get_text("safety_plan.start_filling", lang)
 
-Начни заполнять любой пункт. Не нужно всё сразу."""
+    if isinstance(items, list):
+        items_text = "\n".join(items)
+    else:
+        items_text = str(items)
+
+    return f"{title}\n\n{items_text}\n\n{start}"

@@ -1,0 +1,67 @@
+{
+  "bot_name": "PsySupport AI",
+  "start": {
+    "greeting": "Hallo. Ich bin {bot_name} — ein KI-Assistent für psychologische Selbsthilfe und emotionale Unterstützung.",
+    "capabilities": "Ich kann dir helfen:\n— Emotionen und Gedanken zu verstehen\n— Stress zu reduzieren\n— CBT/DBT/Mindfulness-Übungen zu machen\n— ein Stimmungstagebuch zu führen\n— einen kleinen Aktionsplan zu erstellen",
+    "disclaimer": "Ich bin kein Arzt, kein Psychotherapeut und kein Krisendienst. Ich stelle keine Diagnosen und verschreibe keine Behandlung.",
+    "crisis_warning": "Wenn du in Gefahr bist oder Gedanken hast, dir selbst/anderen zu schaden, wende dich an den Notruf, eine Krisenlinie oder jemanden in deiner Nähe.",
+    "consent": "Indem du fortfährst, bestätigst du, dass du diese Einschränkungen verstehst.",
+    "buttons": {
+      "continue": "✅ Ich verstehe, fortfahren",
+      "crisis": "🆘 Ich brauche dringend Hilfe",
+      "privacy": "🔒 Datenschutzrichtlinie"
+    }
+  },
+  "menu": {
+    "chat": "🗣 Sprechen",
+    "anxiety": "😰 Ich bin ängstlich",
+    "sad": "😔 Ich bin traurig",
+    "mood": "📝 Stimmungstagebuch",
+    "exercises": "🧘 Übungen",
+    "safety_plan": "📋 Sicherheitsplan",
+    "settings": "⚙️ Einstellungen"
+  },
+  "crisis": {
+    "response": "Es scheint, dass dies ein unsicherer Moment sein könnte. Ich kann keine Notfallhilfe ersetzen, aber ich kann im Chat bei dir bleiben.\n\nBitte tu jetzt 3 Dinge:\n1. Rufe deinen lokalen Notruf oder eine Krisenlinie an.\n2. Schreibe oder rufe jemanden in deiner Nähe an: \"Mir ist gerade nicht sicher allein, bleib bei mir.\"\n3. Lege alles beiseite, womit du dir wehtun könntest.\n\nAntworte mit einem Wort: bist du gerade allein?",
+    "elevated": "Ich höre, dass du eine sehr schwierige Zeit durchmachst. Das ist wichtig und ernst.\n\nIch kann jetzt mit kleinen Schritten helfen, aber wenn es dir schon lange schlecht geht oder es schlimmer wird, wende dich bitte an einen Spezialisten.\n\nMöchtest du eine kurze Stabilisierungsübung machen?"
+  },
+  "mood": {
+    "question": "📊 Wie fühlst du dich gerade?",
+    "saved": "✅ Gespeichert: {mood}\n\nDanke für den Eintrag! Die Stimmungsverfolgung hilft, Muster zu erkennen.\n\nMöchtest du eine Notiz hinzufügen, was deinen Zustand beeinflusst?",
+    "levels": {
+      "5": "Großartig 😊",
+      "4": "Gut 🙂",
+      "3": "Okay 😐",
+      "2": "Nicht so gut 😕",
+      "1": "Schlecht 😢"
+    }
+  },
+  "chat": {
+    "prompt": "Ich bin hier. Erzähl mir, was dir auf dem Herzen liegt. Ich höre zu und helfe dir, es zu verstehen.",
+    "error": "Entschuldigung, bei der Verarbeitung deiner Anfrage ist ein Fehler aufgetreten. Bitte versuche es später noch einmal oder wende dich um Hilfe."
+  },
+  "safety_plan": {
+    "title": "📋 Sicherheitsplan",
+    "items": [
+      "1. Meine frühen Warnzeichen: _____________",
+      "2. Was ich selbst in den ersten 10 Minuten tun kann: _____________",
+      "3. Was mir hilft, umzuschalten: _____________",
+      "4. Menschen, die ich anrufen/texten kann: _____________",
+      "5. Spezialisten/Dienste: _____________",
+      "6. Wie ich den Raum sicherer machen kann: _____________",
+      "7. Was mich am Leben hält: _____________",
+      "8. Was ich jetzt tun werde: _____________"
+    ],
+    "start_filling": "Beginne mit einem beliebigen Punkt. Du musst nicht alles auf einmal ausfüllen."
+  },
+  "privacy": {
+    "policy": "🔒 Datenschutzrichtlinie\n\n• Wir minimieren die Datenerfassung\n• Nachrichten werden standardmäßig nicht gespeichert (STORE_CONVERSATIONS=false)\n• Du kannst deine Daten mit /delete_my_data löschen\n• Wir geben Daten nicht an Dritte weiter",
+    "delete_confirm": "⚠️ Bist du sicher, dass du alle deine Daten löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "deleted": "✅ Alle deine Daten wurden gelöscht."
+  },
+  "errors": {
+    "generic": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "rate_limit": "Zu viele Nachrichten. Bitte warte einen Moment.",
+    "model_unavailable": "KI-Modell ist vorübergehend nicht verfügbar. Bitte versuche es in einer Minute erneut."
+  }
+}

@@ -4,42 +4,45 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![OpenRouter](https://img.shields.io/badge/Powered%20by-OpenRouter-orange)](https://openrouter.ai)
 
-AI-помощник для психологической самопомощи, психообразования и эмоциональной поддержки в Telegram.
+**English** | [Русский](README.ru.md) | [Deutsch](README.de.md) | [Français](README.fr.md)
 
-## ⚠️ Важно
+AI assistant for psychological self-help, psychoeducation and emotional support in Telegram.
 
-Этот бот **не является**:
-- Врачом или психиатром
-- Психотерапевтом
-- Кризисной службой
-- Инструментом для диагностики
+## ⚠️ Important
 
-Бот предназначен только для **самопомощи** и **эмоциональной поддержки**.
+This bot **is NOT**:
+- A doctor or psychiatrist
+- A psychotherapist
+- A crisis service
+- A diagnostic tool
 
-## ✨ Возможности
+The bot is designed for **self-help** and **emotional support** only.
 
-- 🗣 **Безопасный диалог** с AI
-- 🧠 **CBT/КПТ** упражнения
-- 🧘 **Mindfulness** и grounding
-- 📊 **Дневник настроения**
-- 📋 **План безопасности**
-- 🆘 **Кризисная маршрутизация**
-- 🤖 **OpenRouter** — бесплатные LLM-модели
+## ✨ Features
 
-## 🚀 Быстрый старт
+- 🗣 **Safe dialogue** with AI
+- 🧠 **CBT** exercises
+- 🧘 **Mindfulness** and grounding
+- 📊 **Mood diary**
+- 📋 **Safety plan**
+- 🆘 **Crisis routing**
+- 🤖 **OpenRouter** — free LLM models
+- 🌍 **Multilingual** — auto language detection
 
-### 1. Получение API ключей
+## 🚀 Quick Start
+
+### 1. Get API Keys
 
 **Telegram Bot Token:**
-1. Напишите [@BotFather](https://t.me/BotFather)
-2. Отправьте `/newbot`
-3. Скопируйте токен
+1. Message [@BotFather](https://t.me/BotFather)
+2. Send `/newbot`
+3. Copy the token
 
 **OpenRouter API Key:**
-1. Зарегистрируйтесь на [openrouter.ai/keys](https://openrouter.ai/keys)
-2. Создайте ключ (бесплатно)
+1. Sign up at [openrouter.ai/keys](https://openrouter.ai/keys)
+2. Create a key (free)
 
-### 2. Установка
+### 2. Installation
 
 ```bash
 git clone https://github.com/vmn2014/Psychologist-bot.git
@@ -47,40 +50,40 @@ cd Psychologist-bot
 pip install -r requirements.txt
 ```
 
-### 3. Настройка
+### 3. Configuration
 
 ```bash
 cp .env.example .env
-# Отредактируйте .env, добавив свои ключи
+# Edit .env, add your keys
 ```
 
-### 4. Запуск
+### 4. Run
 
 ```bash
-# Локально
+# Local
 python -m app.main
 
-# Или через Docker
+# Or with Docker
 docker-compose up --build
 ```
 
-## 📁 Структура проекта
+## 📁 Project Structure
 
 ```
 psy-support-bot/
 ├── app/
-│   ├── main.py              # Точка входа
-│   ├── config.py            # Конфигурация
+│   ├── main.py              # Entry point
+│   ├── config.py            # Pydantic Settings
 │   ├── ai/
 │   │   ├── openrouter_client.py
 │   │   └── prompts/
 │   │       ├── system_prompt.py
 │   │       └── safety_classifier_prompt.py
-│   ├── bot/
-│   │   └── handlers/
-│   │       ├── start.py
-│   │       ├── chat.py
-│   │       └── mood.py
+│   ├── bot/handlers/
+│   │   ├── start.py         # Consent + menu
+│   │   ├── chat.py          # Safe dialogue
+│   │   ├── mood.py          # Mood diary
+│   │   └── i18n.py          # Translations
 │   ├── safety/
 │   │   ├── crisis_detector.py
 │   │   ├── safety_classifier.py
@@ -89,6 +92,11 @@ psy-support-bot/
 │   │   ├── models.py
 │   │   └── session.py
 │   └── psychology/
+├── i18n/                    # Translations
+│   ├── en.json
+│   ├── ru.json
+│   ├── de.json
+│   └── fr.json
 ├── docker-compose.yml
 ├── Dockerfile
 ├── requirements.txt
@@ -96,49 +104,61 @@ psy-support-bot/
 └── README.md
 ```
 
-## 🛡️ Безопасность
+## 🌍 Languages
 
-- Детекция кризисных ситуаций (5 уровней риска)
-- Автоматическая маршрутизация к живой помощи
-- Защита от prompt injection
-- Валидация ответов AI
-- Не ставит диагнозы
-- Не даёт медицинских советов
+The bot automatically detects the user's language from Telegram settings:
 
-## 🔒 Приватность
+| Language | Code | Status |
+|----------|------|--------|
+| English | `en` | ✅ Full |
+| Русский | `ru` | ✅ Full |
+| Deutsch | `de` | ✅ Full |
+| Français | `fr` | ✅ Full |
+| Español | `es` | 🚧 Planned |
 
-- Явное согласие при `/start`
-- Команда `/delete_my_data`
-- Минимизация данных
-- Шифрование секретов через env
+## 🛡️ Safety
 
-## 📚 Доказательная база
+- 5-level crisis detection
+- Automatic routing to live help
+- Prompt injection protection
+- AI response validation
+- No diagnoses
+- No medical advice
 
-Бот использует подходы, рекомендованные:
+## 🔒 Privacy
+
+- Explicit consent at `/start`
+- `/delete_my_data` command
+- Data minimization
+- Encrypted secrets via env
+
+## 📚 Evidence Base
+
+The bot uses approaches recommended by:
 - [WHO](https://www.who.int)
 - [NICE](https://www.nice.org.uk)
 - [SAMHSA](https://www.samhsa.gov)
 
-## 📝 Команды
+## 📝 Commands
 
-| Команда | Описание |
-|---------|----------|
-| `/start` | Начало работы |
-| `/mood` | Дневник настроения |
-| `/chat` | Свободный разговор |
-| `/delete_my_data` | Удалить данные |
-| `/privacy` | Политика приватности |
+| Command | Description |
+|---------|-------------|
+| `/start` | Start |
+| `/mood` | Mood diary |
+| `/chat` | Free chat |
+| `/delete_my_data` | Delete data |
+| `/privacy` | Privacy policy |
 
-## ⚠️ Ограничения
+## ⚠️ Limitations
 
-- Бесплатные модели OpenRouter имеют rate limits
-- Бот не заменяет профессиональную помощь
-- При кризисе обращайтесь к специалистам
+- Free OpenRouter models have rate limits
+- Bot does not replace professional help
+- In crisis, contact specialists
 
-## 🤝 Участие
+## 🤝 Contributing
 
-Приветствуются pull requests! См. [CONTRIBUTING.md](CONTRIBUTING.md).
+Pull requests welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## 📄 Лицензия
+## 📄 License
 
 [MIT License](LICENSE) © 2026

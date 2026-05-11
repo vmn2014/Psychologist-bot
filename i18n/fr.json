@@ -1,0 +1,67 @@
+{
+  "bot_name": "PsySupport AI",
+  "start": {
+    "greeting": "Bonjour. Je suis {bot_name} — un assistant IA pour l'auto-assistance psychologique et le soutien émotionnel.",
+    "capabilities": "Je peux t'aider à :\n— comprendre les émotions et les pensées\n— réduire le stress\n— faire des exercices CBT/DBT/mindfulness\n— tenir un journal d'humeur\n— faire un petit plan d'action",
+    "disclaimer": "Je ne suis pas un médecin, pas un psychothérapeute et pas un service de crise. Je ne pose pas de diagnostics et ne prescris pas de traitement.",
+    "crisis_warning": "Si tu es en danger ou as des pensées de te faire du mal/toi-même ou aux autres, contacte les services d'urgence, une ligne de crise ou quelqu'un près de chez toi.",
+    "consent": "En continuant, tu confirmes que tu comprends ces limites.",
+    "buttons": {
+      "continue": "✅ Je comprends, continuer",
+      "crisis": "🆘 J'ai besoin d'aide urgente",
+      "privacy": "🔒 Politique de confidentialité"
+    }
+  },
+  "menu": {
+    "chat": "🗣 Parler",
+    "anxiety": "😰 Je suis anxieux",
+    "sad": "😔 Je suis triste",
+    "mood": "📝 Journal d'humeur",
+    "exercises": "🧘 Exercices",
+    "safety_plan": "📋 Plan de sécurité",
+    "settings": "⚙️ Paramètres"
+  },
+  "crisis": {
+    "response": "Il semble que ce soit un moment dangereux. Je ne peux pas remplacer l'aide d'urgence, mais je peux rester avec toi dans le chat.\n\nS'il te plaît, fais 3 choses maintenant :\n1. Appelle les services d'urgence locaux ou une ligne de crise.\n2. Écris ou appelle quelqu'un près de chez toi : \"Je ne suis pas en sécurité seul en ce moment, reste avec moi.\"\n3. Éloigne tout ce avec quoi tu pourrais te faire du mal.\n\nRéponds par un mot : es-tu seul(e) maintenant ?",
+    "elevated": "J'entends que tu traverses une période très difficile. C'est important et sérieux.\n\nJe peux aider avec de petites étapes maintenant, mais si tu te sens mal depuis longtemps ou que ça empire, contacte un spécialiste.\n\nVeux-tu faire un court exercice de stabilisation ?"
+  },
+  "mood": {
+    "question": "📊 Comment te sens-tu maintenant ?",
+    "saved": "✅ Enregistré : {mood}\n\nMerci pour la note ! Le suivi de l'humeur aide à repérer les patterns.\n\nVeux-tu ajouter une note sur ce qui influence ton état ?",
+    "levels": {
+      "5": "Excellent 😊",
+      "4": "Bien 🙂",
+      "3": "Okay 😐",
+      "2": "Pas très bien 😕",
+      "1": "Mal 😢"
+    }
+  },
+  "chat": {
+    "prompt": "Je suis là. Raconte-moi ce qui te préoccupe. J'écoute et t'aide à comprendre.",
+    "error": "Désolé, une erreur s'est produite lors du traitement de ta demande. Réessaie plus tard ou demande de l'aide."
+  },
+  "safety_plan": {
+    "title": "📋 Plan de sécurité",
+    "items": [
+      "1. Mes signes d'alerte précoces : _____________",
+      "2. Ce que je peux faire moi-même dans les 10 premières minutes : _____________",
+      "3. Ce qui m'aide à changer de focus : _____________",
+      "4. Les personnes que je peux contacter : _____________",
+      "5. Spécialistes/services : _____________",
+      "6. Comment rendre l'espace plus sûr : _____________",
+      "7. Ce qui me maintient en vie : _____________",
+      "8. Ce que je vais faire maintenant : _____________"
+    ],
+    "start_filling": "Commence par n'importe quel point. Pas besoin de tout faire en une fois."
+  },
+  "privacy": {
+    "policy": "🔒 Politique de confidentialité\n\n• Nous minimisons la collecte de données\n• Les messages ne sont pas stockés par défaut (STORE_CONVERSATIONS=false)\n• Tu peux supprimer tes données avec /delete_my_data\n• Nous ne partageons pas les données avec des tiers",
+    "delete_confirm": "⚠️ Es-tu sûr de vouloir supprimer toutes tes données ? Cette action est irréversible.",
+    "deleted": "✅ Toutes tes données ont été supprimées."
+  },
+  "errors": {
+    "generic": "Quelque chose s'est mal passé. Réessaie.",
+    "rate_limit": "Trop de messages. Attends un moment.",
+    "model_unavailable": "Le modèle IA est temporairement indisponible. Réessaie dans une minute."
+  }
+}
