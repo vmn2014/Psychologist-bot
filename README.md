@@ -47,6 +47,12 @@ The bot is designed for **self-help** and **emotional support** only.
 ```bash
 git clone https://github.com/vmn2014/Psychologist-bot.git
 cd Psychologist-bot
+
+# Create virtual environment (recommended)
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -60,10 +66,10 @@ cp .env.example .env
 ### 4. Run
 
 ```bash
-# Local
+# Local (with activated venv)
 python -m app.main
 
-# Or with Docker
+# Or with Docker (no venv needed)
 docker-compose up --build
 ```
 

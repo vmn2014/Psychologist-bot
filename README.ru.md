@@ -47,6 +47,12 @@ AI-помощник для психологической самопомощи, 
 ```bash
 git clone https://github.com/vmn2014/Psychologist-bot.git
 cd Psychologist-bot
+
+# Создать виртуальное окружение (рекомендуется)
+python3 -m venv venv
+source venv/bin/activate  # На Windows: venv\Scripts\activate
+
+# Установить зависимости
 pip install -r requirements.txt
 ```
 
@@ -60,10 +66,10 @@ cp .env.example .env
 ### 4. Запуск
 
 ```bash
-# Локально
+# Локально (с активированным venv)
 python -m app.main
 
-# Или через Docker
+# Или через Docker (venv не нужен)
 docker-compose up --build
 ```
 
