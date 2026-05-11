@@ -3,6 +3,10 @@
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![OpenRouter](https://img.shields.io/badge/Powered%20by-OpenRouter-orange)](https://openrouter.ai)
+[![CI/CD](https://github.com/Volynskiy-Business/Psychologist-bot/actions/workflows/ci.yml/badge.svg)](https://github.com/Volynskiy-Business/Psychologist-bot/actions)
+[![Coverage](https://codecov.io/gh/Volynskiy-Business/Psychologist-bot/branch/main/graph/badge.svg)](https://codecov.io/gh/Volynskiy-Business/Psychologist-bot)
+[![Docker](https://img.shields.io/badge/Docker-ready-blue)](docker-compose.yml)
+[![Languages](https://img.shields.io/badge/Languages-7-success)](i18n/)
 
 **English** | [Русский](README.ru.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Português](README.pt.md) | [Norsk](README.no.md) | [Dansk](README.da.md)
 
