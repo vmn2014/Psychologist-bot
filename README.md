@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![OpenRouter](https://img.shields.io/badge/Powered%20by-OpenRouter-orange)](https://openrouter.ai)
 
-**English** | [Русский](README.ru.md) | [Deutsch](README.de.md) | [Français](README.fr.md)
+**English** | [Русский](README.ru.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Português](README.pt.md) | [Norsk](README.no.md) | [Dansk](README.da.md)
 
 AI assistant for psychological self-help, psychoeducation and emotional support in Telegram.
 
@@ -121,6 +121,9 @@ The bot automatically detects the user's language from Telegram settings:
 | Deutsch | `de` | ✅ Full |
 | Français | `fr` | ✅ Full |
 | Español | `es` | 🚧 Planned |
+| Português | `pt` | ✅ Full |
+| Norsk | `no` | ✅ Full |
+| Dansk | `da` | ✅ Full |
 
 ## 🛡️ Safety
 

@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![OpenRouter](https://img.shields.io/badge/Powered%20by-OpenRouter-orange)](https://openrouter.ai)
 
-[English](README.md) | **Русский** | [Deutsch](README.de.md) | [Français](README.fr.md)
+[English](README.md) | **Русский** | [Deutsch](README.de.md) | [Français](README.fr.md) | [Português](README.pt.md) | [Norsk](README.no.md) | [Dansk](README.da.md)
 
 AI-помощник для психологической самопомощи, психообразования и эмоциональной поддержки в Telegram.
 
@@ -121,6 +121,9 @@ psy-support-bot/
 | Deutsch | `de` | ✅ Полный |
 | Français | `fr` | ✅ Полный |
 | Español | `es` | 🚧 В планах |
+| Português | `pt` | ✅ Полный |
+| Norsk | `no` | ✅ Полный |
+| Dansk | `da` | ✅ Полный |
 
 ## 🛡️ Безопасность
 

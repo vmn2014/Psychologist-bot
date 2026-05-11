@@ -1,0 +1,67 @@
+{
+  "bot_name": "PsySupport AI",
+  "start": {
+    "greeting": "Olá. Eu sou {bot_name} — um assistente de IA para autoajuda psicológica e apoio emocional.",
+    "capabilities": "Eu posso ajudar:\n— a entender emoções e pensamentos\n— a reduzir o stress\n— a fazer exercícios CBT/DBT/mindfulness\n— a manter um diário de humor\n— a fazer um pequeno plano de ação",
+    "disclaimer": "Eu não sou médico, psicoterapeuta ou serviço de crise. Não faço diagnósticos nem prescrevo tratamento.",
+    "crisis_warning": "Se estás em perigo ou tens pensamentos de te fazer mal/a ti ou a outros, contacta os serviços de emergência, uma linha de crise ou alguém perto de ti.",
+    "consent": "Ao continuar, confirmas que entendes estas limitações.",
+    "buttons": {
+      "continue": "✅ Entendo, continuar",
+      "crisis": "🆘 Preciso de ajuda urgente",
+      "privacy": "🔒 Política de privacidade"
+    }
+  },
+  "menu": {
+    "chat": "🗣 Conversar",
+    "anxiety": "😰 Estou ansioso",
+    "sad": "😔 Estou triste",
+    "mood": "📝 Diário de humor",
+    "exercises": "🧘 Exercícios",
+    "safety_plan": "📋 Plano de segurança",
+    "settings": "⚙️ Definições"
+  },
+  "crisis": {
+    "response": "Parece que pode ser um momento inseguro. Não posso substituir a ajuda de emergência, mas posso ficar contigo no chat.\n\nPor favor, faz 3 coisas agora:\n1. Liga para os serviços de emergência locais ou uma linha de crise.\n2. Envia mensagem ou liga a alguém perto de ti: \"Não estou seguro sozinho agora, fica comigo.\"\n3. Afasta tudo com o que te possas fazer mal.\n\nResponde com uma palavra: estás sozinho agora?",
+    "elevated": "Ouço que estás a passar por um momento muito difícil. Isso é importante e sério.\n\nPosso ajudar com pequenos passos agora, mas se te sentes mal há muito tempo ou está a piorar, por favor contacta um especialista.\n\nQueres fazer um curto exercício de estabilização?"
+  },
+  "mood": {
+    "question": "📊 Como te sentes agora?",
+    "saved": "✅ Guardado: {mood}\n\nObrigado pela nota! Acompanhar o humor ajuda a notar padrões.\n\nQueres adicionar uma nota sobre o que influencia o teu estado?",
+    "levels": {
+      "5": "Excelente 😊",
+      "4": "Bem 🙂",
+      "3": "Razoável 😐",
+      "2": "Não muito bem 😕",
+      "1": "Mal 😢"
+    }
+  },
+  "chat": {
+    "prompt": "Estou aqui. Conta-me o que te preocupa. Eu ouço e ajudo a perceber.",
+    "error": "Desculpa, ocorreu um erro ao processar o teu pedido. Tenta mais tarde ou pede ajuda."
+  },
+  "safety_plan": {
+    "title": "📋 Plano de segurança",
+    "items": [
+      "1. Os meus sinais de alerta precoces: _____________",
+      "2. O que posso fazer sozinho nos primeiros 10 minutos: _____________",
+      "3. O que me ajuda a mudar de foco: _____________",
+      "4. Pessoas a quem posso escrever/ligar: _____________",
+      "5. Especialistas/serviços: _____________",
+      "6. Como tornar o espaço mais seguro: _____________",
+      "7. O que me mantém vivo: _____________",
+      "8. O que vou fazer agora: _____________"
+    ],
+    "start_filling": "Começa por preencher qualquer ponto. Não precisas de fazer tudo de uma vez."
+  },
+  "privacy": {
+    "policy": "🔒 Política de privacidade\n\n• Minimizamos a recolha de dados\n• As mensagens não são guardadas por padrão (STORE_CONVERSATIONS=false)\n• Podes apagar os teus dados com /delete_my_data\n• Não partilhamos dados com terceiros",
+    "delete_confirm": "⚠️ Tens a certeza de que queres apagar todos os teus dados? Esta ação não pode ser desfeita.",
+    "deleted": "✅ Todos os teus dados foram apagados."
+  },
+  "errors": {
+    "generic": "Algo correu mal. Tenta novamente.",
+    "rate_limit": "Demasiadas mensagens. Por favor, espera um momento.",
+    "model_unavailable": "O modelo de IA está temporariamente indisponível. Tenta novamente dentro de um minuto."
+  }
+}

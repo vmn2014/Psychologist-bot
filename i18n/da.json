@@ -1,0 +1,67 @@
+{
+  "bot_name": "PsySupport AI",
+  "start": {
+    "greeting": "Hej. Jeg er {bot_name} — en AI-assistent til psykologisk selvhjælp og følelsesmæssig støtte.",
+    "capabilities": "Jeg kan hjælpe dig med at:\n— forstå følelser og tanker\n— reducere stress\n— lave CBT/DBT/mindfulness-øvelser\n— føre humørdagbog\n— lave en lille handlingsplan",
+    "disclaimer": "Jeg er ikke læge, ikke psykoterapeut og ikke krisetjeneste. Jeg stiller ikke diagnoser og ordinerer ikke behandling.",
+    "crisis_warning": "Hvis du er i fare eller har tanker om at skade dig selv/andre, skal du kontakte nødtjenester, en kriselinje eller nogen i nærheden.",
+    "consent": "Ved at fortsætte bekræfter du, at du forstår disse begrænsninger.",
+    "buttons": {
+      "continue": "✅ Jeg forstår, fortsæt",
+      "crisis": "🆘 Jeg har brug for akut hjælp",
+      "privacy": "🔒 Privatlivspolitik"
+    }
+  },
+  "menu": {
+    "chat": "🗣 Snakke",
+    "anxiety": "😰 Jeg er ængstelig",
+    "sad": "😔 Jeg er ked af det",
+    "mood": "📝 Humørdagbog",
+    "exercises": "🧘 Øvelser",
+    "safety_plan": "📋 Sikkerhedsplan",
+    "settings": "⚙️ Indstillinger"
+  },
+  "crisis": {
+    "response": "Det ser ud til, at dette kan være et utrygt øjeblik. Jeg kan ikke erstatte nødhjælp, men jeg kan være her i chatten.\n\nGør venligst 3 ting nu:\n1. Ring til din lokale nødtjeneste eller kriselinje.\n2. Skriv eller ring til nogen i nærheden: \"Jeg er ikke tryg alene lige nu, vær hos mig.\"\n3. Læg alt væk, som du kan skade dig selv med.\n\nSvar med ét ord: er du alene lige nu?",
+    "elevated": "Jeg hører, at du har det meget svært. Dette er vigtigt og alvorligt.\n\nJeg kan hjælpe med små skridt lige nu, men hvis du har haft det dårligt i lang tid eller det bliver værre, bedes du kontakte en specialist.\n\nVil du lave en kort stabiliseringsøvelse?"
+  },
+  "mood": {
+    "question": "📊 Hvordan har du det lige nu?",
+    "saved": "✅ Gemt: {mood}\n\nTak for noten! At følge humøret hjælper med at bemærke mønstre.\n\nVil du tilføje en note om, hvad der påvirker din tilstand?",
+    "levels": {
+      "5": "Fremragende 😊",
+      "4": "Godt 🙂",
+      "3": "Okay 😐",
+      "2": "Ikke så godt 😕",
+      "1": "Dårligt 😢"
+    }
+  },
+  "chat": {
+    "prompt": "Jeg er her. Fortæl mig, hvad der bekymrer dig. Jeg lytter og hjælper dig med at forstå.",
+    "error": "Beklager, der opstod en fejl under behandling af din anmodning. Prøv igen senere eller bed om hjælp."
+  },
+  "safety_plan": {
+    "title": "📋 Sikkerhedsplan",
+    "items": [
+      "1. Mine tidlige advarselstegn: _____________",
+      "2. Hvad jeg selv kan gøre i de første 10 minutter: _____________",
+      "3. Hvad hjælper mig med at skifte fokus: _____________",
+      "4. Personer, jeg kan skrive til/ringe til: _____________",
+      "5. Specialister/tjenester: _____________",
+      "6. Hvordan gøre rummet sikrere: _____________",
+      "7. Hvad holder mig i live: _____________",
+      "8. Hvad jeg vil gøre lige nu: _____________"
+    ],
+    "start_filling": "Begynd at udfylde ethvert punkt. Du behøver ikke gøre det hele på én gang."
+  },
+  "privacy": {
+    "policy": "🔒 Privatlivspolitik\n\n• Vi minimerer dataindsamling\n• Beskeder gemmes ikke som standard (STORE_CONVERSATIONS=false)\n• Du kan slette dine data med /delete_my_data\n• Vi deler ikke data med tredjeparter",
+    "delete_confirm": "⚠️ Er du sikker på, at du vil slette alle dine data? Denne handling kan ikke fortrydes.",
+    "deleted": "✅ Alle dine data er slettet."
+  },
+  "errors": {
+    "generic": "Noget gik galt. Prøv igen.",
+    "rate_limit": "For mange beskeder. Vent venligst et øjeblik.",
+    "model_unavailable": "AI-modellen er midlertidigt utilgængelig. Prøv igen om et minut."
+  }
+}

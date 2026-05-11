@@ -66,9 +66,15 @@ def get_user_language(user) -> str:
             "es": "es",
             "it": "it",
             "pt": "pt",
-            "uk": "ru",  # Ukrainian -> Russian fallback
-            "be": "ru",  # Belarusian -> Russian fallback
-            "kk": "ru",  # Kazakh -> Russian fallback
+            "pt-br": "pt",  # Brazilian Portuguese
+            "no": "no",
+            "nb": "no",     # Norwegian Bokmål
+            "nn": "no",     # Norwegian Nynorsk
+            "da": "da",
+            "uk": "ru",     # Ukrainian -> Russian fallback
+            "be": "ru",     # Belarusian -> Russian fallback
+            "kk": "ru",     # Kazakh -> Russian fallback
+            "sv": "da",     # Swedish -> Danish fallback
         }
         return lang_map.get(user.language_code, "en")
     return "en"
